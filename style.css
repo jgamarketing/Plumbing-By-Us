@@ -1,0 +1,225 @@
+/*Plumbing By Us CSS Document*/
+/*Begin Defaults*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,
+var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup,sub{line-height:-1px;vertical-align:text-top;}sub{vertical-align:text-bottom;}
+input, textarea, select{font-family:inherit;font-size:inherit;font-weight:inherit;letter-spacing:inherit;}
+/*Debug
+div {
+	border: 1px dashed black;
+}
+/*End Debug*/
+body {
+	font-size: 62.5%;
+	min-width: 100%;
+	background: url(images/blue_back.png) repeat;
+}
+p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	color: white;
+	line-height: 1.5em;
+	padding: 1em 0 0 0;
+	width: 25em;
+	
+}
+label {	
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.1em;
+	color: white;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-family: Georgia;
+	color: #fff;
+	margin: 1em 0 0 0;
+}
+ul {
+	padding: 2em 0 0 0;
+
+}
+li {
+	color: white;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	list-style: disc;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-block;
+}
+/*End Defaults*/
+/*Begin Wrappers*/
+
+.wrapper {
+	overflow: hidden;
+	min-width: 95.5em;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	background: #f05a22;
+}
+.content_wrapper {
+	float: left;
+	margin: 0 0 0 26em;
+	padding: 0 0 0 0;
+	width: 50em;
+	height: auto;
+}
+.content_background {
+	width: 100%;
+	height: 100%;
+	background: url(images/blue_back.png) repeat;
+}
+.header_wrapper {
+	width: 95.5em;
+	height: auto;
+}
+
+/*End Wrappers*/
+/*Begin Content*/
+
+.header {
+	width: 95.5em;
+	height: 40.2em;
+	background: url(images/header.png) no-repeat;
+	cursor: pointer;
+}
+.content_left {
+	float: left;
+	width: 17em;
+	height: auto; /*change to auto after content is put in*/
+	padding: 11em 0 0 0;
+}
+.content_middle {
+	float: left;
+	width: 17em;
+	height: auto; /*change to auto after content is put in*/
+	padding: 12.8em 0 0 1.5em;
+}
+.content_right {
+	float: right;
+	width: 12.6em;
+	height: auto;
+	padding: 11em 0 0 0;
+}
+.footer {
+	float: left;
+	margin:4em 0 0 -12em;
+	width: 56.8em;
+	height: 10em;
+	background: url(images/footer.png) no-repeat;	
+	padding: 2.6em 0 0 11.5em;
+	overflow: hidden;
+}
+	.footer ul li{
+		display: inline;
+		padding: 0 2em 0 0;
+	}
+	.footer a {
+		text-decoration: none;
+		color: #fff;
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 1.1em;
+	}
+.wave_repeat {
+	position: absolute;
+	top: 39.4em;
+	height: 1.2em;
+	min-width: 95.5em;
+	width: 100%;
+	background: url(images/trans_wave.png) repeat-x;
+}
+.about_us {
+	position: absolute;
+	top: 32.8em;
+	left: 26.3em;
+	width: 13.5em;
+	height: 15.1em;
+}
+#aboutUslink {
+	display: block;
+	width: 13.5em;
+	height: 15.1em;
+	background: url("images/about_us.png") no-repeat 0 0;
+}
+
+#aboutUslink:hover{
+	background-position: 0 -153px;
+}
+#aboutUslink span{
+	display: none;
+}
+#servicelink {
+	display: block;
+	width: 8.6em;
+	height: 20.7em;
+	background: url("images/services.png") no-repeat 0 0;
+}
+
+#servicelink:hover{
+	background-position: 0 -208px;
+}
+#servicelink span{
+	display: none;
+}
+#contactlink {
+	display: block;
+	width: 12.9em;
+	height: 10.5em;
+	background: url("images/contact.png") no-repeat 0 0;
+}
+
+#contactlink:hover{
+	background-position: 0 -106px;
+}
+#contactlink span{
+	display: none;
+}
+.service {
+	position: absolute;
+	top: 29.1em;
+	left: 43.5em;
+	width: 8.6em;
+	height: 20.7em;
+	cursor: pointer;
+}
+.contact {
+	position: absolute;
+	top: 33.8em;
+	left: 54.5em;
+	width: 12.9em;
+	height: 10.5em;
+	background: url(images/contact.png) no-repeat;
+	cursor: pointer;
+}
+.news_button {
+	height: 2.6em;
+	width: 2.4em;
+	border: none;
+	background: url(images/go.png);
+	position: absolute;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: .9em;
+	color: #fff;
+}
+#sidebox {
+	text-align: center;
+	margin: 2em 0 0 0;
+	float: right;
+	width: 12.4em;
+	height: 10em;
+	background: url(images/side_box.png) no-repeat;
+	padding: 1em 0 0 0;
+}
+
